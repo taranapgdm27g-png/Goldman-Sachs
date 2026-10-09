@@ -1,6 +1,6 @@
 # Tarana Bansal: investment banking portfolio
 
-Live site: https://taranapgdm27g-png.github.io/investment-banking/
+Live site: https://taranapgdm27g-png.github.io/Goldman-Sachs/
 
 PGDM Finance and Analytics, Great Lakes Institute of Management, Gurgaon (2027).
 

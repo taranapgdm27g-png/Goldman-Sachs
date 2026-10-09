@@ -7,10 +7,10 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Tarana Bansal | Valuation, deals, capital markets and portfolios">
 <meta property="og:description" content="Live models for valuation, M&A, LBO, IPO, bonds, project finance, restructuring and portfolios, an equity research initiation on Dabur India, and Orvelle, a D2C brand modelled end to end.">
-<meta property="og:url" content="https://taranapgdm27g-png.github.io/investment-banking/">
-<meta property="og:image" content="https://taranapgdm27g-png.github.io/investment-banking/og-card.png">
+<meta property="og:url" content="https://taranapgdm27g-png.github.io/Goldman-Sachs/">
+<meta property="og:image" content="https://taranapgdm27g-png.github.io/Goldman-Sachs/og-card.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://taranapgdm27g-png.github.io/investment-banking/og-card.png">
+<meta name="twitter:image" content="https://taranapgdm27g-png.github.io/Goldman-Sachs/og-card.png">
 <meta name="description" content="Tarana Bansal. Valuation, M&A, LBO, IPO, wealth and portfolio tools built live in the browser, with Dabur India valuation, Orvelle and more.">
 <meta name="theme-color" content="#F3EDE2" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0A1320" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230A1628'/%3E%3Cpath d='M14 44l12-12 8 8 16-18' fill='none' stroke='%23D4AF6A' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
@@ -530,8 +530,7 @@ function axisY(svg,min,max,L,R,T,B,W,f){const span=max-min||1;const st=(()=>{con
 const FORS={jpmorgan:{n:"J.P. Morgan",d:"val",l:"Valuation and deal work first: the work closest to the Commercial & Investment Bank."},
  darashaw:{n:"Darashaw & Co.",d:"pf",l:"Debt markets, credit and project finance first: the core of Darashaw's work.",notes:/borrowing|bond/i},
  morganstanley:{n:"Morgan Stanley",d:"val",l:"Valuation, research and capital markets first."},
- goldmansachs:{n:"Goldman Sachs",d:"ma",l:"M&A, leveraged finance and capital markets first."},
- gstreasury:{n:"Goldman Sachs Corporate Treasury",d:"dcm",l:"Funding, bonds and collateral first. The margin-call, collateral and P&amp;L explain models are in the <a href='markets.html' target='_blank' rel='noopener'>markets workbench</a>.",notes:/borrowing|bond|yield/i,cvf:"Tarana_Bansal_Resume_Treasury.pdf"},
+ goldmansachs:{n:"Goldman Sachs Corporate Treasury",d:"dcm",l:"Funding, bonds and collateral first. The margin-call, collateral and P&amp;L explain models are in the <a href='markets.html' target='_blank' rel='noopener'>markets workbench</a>.",notes:/borrowing|bond|yield/i,cvf:"Tarana_Bansal_Resume.pdf"},
  kotak:{n:"Kotak Investment Banking",d:"ipo",l:"Indian equity capital markets and deals first.",notes:/IPO/i},
  avendus:{n:"Avendus",d:"ma",l:"M&A and private markets first."},
  citi:{n:"Citi",d:"dcm",l:"Capital markets and credit first.",notes:/borrowing|bond/i},
@@ -540,7 +539,8 @@ const FORS={jpmorgan:{n:"J.P. Morgan",d:"val",l:"Valuation and deal work first: 
  deloitte:{n:"Deloitte",d:"val",l:"Valuation, due diligence and deal analysis first."},
  ey:{n:"EY",d:"val",l:"Valuation, due diligence and deal analysis first."},
  kpmg:{n:"KPMG",d:"val",l:"Valuation, due diligence and deal analysis first."}};
-const FOR=FORS[(new URLSearchParams(location.search).get("for")||"").toLowerCase().replace(/[^a-z]/g,"")]||null;
+FORS.gstreasury=FORS.goldmansachs;
+const FOR=FORS[(new URLSearchParams(location.search).get("for")||"").toLowerCase().replace(/[^a-z]/g,"")]||FORS.goldmansachs;
 const DESKNAME={val:"Valuation",ma:"M&A",lbo:"LBO",ipo:"IPO",dcm:"Bonds and credit",pf:"Project finance",rx:"Restructuring",wealth:"Wealth",port:"Portfolio"};
 const FILES={ccm_nb:"CCM_Controls_Testing.ipynb",pmo:"CareerCompass_PMO_Deck.pptx",er_dabur:"Dabur_India_Initiation_Report.pdf",teaser:"Project_Orvelle_Teaser.pdf",xl_pf:"Project_Finance_Model_Solar.xlsx",xl_bond:"Bond_and_Credit_Model.xlsx",resume:"Tarana_Bansal_Resume.pdf",report:"Tarana_Bansal_Paytm_Internship_Report.pdf",dabur:"Dabur_Financial_Model.xlsx",wm_model:"Portfolio_Optimisation_Model.xlsx",wm_deck:"Portfolio_Optimisation_Deck.pptx",ccm_pdf:"CCM_Project_Deck.pdf",gt:"Healthcare_Transport_Case.pptx"};
 const MIME={pdf:"application/pdf",xlsx:"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",pptx:"application/vnd.openxmlformats-officedocument.presentationml.presentation"};
